@@ -1,10 +1,17 @@
 const express = require('express');
 const app = express();
-
-app.get('/', (req, res) =>{
-    res.send('Hello World!')
-})
-
-app.listen(process.env.PORT || 5500, () => {
-    console.log('Server is running on localhost:'+ (process.env.PORT || 5500))
-})
+/* ******************************************
+ * Server host name and port
+ * ***************************************** */
+const HOST = 'localhost'
+const PORT = 3000
+/* ***********************
+* Log statement to confirm server operation
+* *********************** */
+app.listen(PORT, () => {
+    console.log(`trial app listening on ${HOST}:${PORT}`)
+    })
+/* ******************************************
+ * Default GET route
+ * ***************************************** */
+app.get("/", (req, res) => {res.send("Welcome home!")})
