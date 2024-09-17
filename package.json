@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0"
-  }
+  },
+  "packageManager": "pnpm@9.2.0+sha1.886364ebd6dae009284bebc56ed4296bb6dd557a"
 }
