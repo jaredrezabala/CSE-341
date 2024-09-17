@@ -9,7 +9,7 @@ const PORT = 3000
 * Log statement to confirm server operation
 * *********************** */
 app.listen(PORT, () => {
-    console.log(`trial app listening on ${HOST}:${PORT}`)
+    console.log(`App listening on ${HOST}:${PORT}`)
     })
 /* ******************************************
  * Default GET route
