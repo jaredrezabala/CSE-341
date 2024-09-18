@@ -1,15 +1,11 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
-/* ******************************************
- * Server host name and port
- * ***************************************** */
-const HOST = 'localhost'
-const PORT = 3000
 /* ***********************
 * Log statement to confirm server operation
 * *********************** */
-app.listen(PORT, () => {
-    console.log(`App listening on ${HOST}:${PORT}`)
+app.listen(process.env.PORT, () => {
+    console.log(`App listening on http://${process.env.HOST}:${process.env.PORT}`)
     })
 /* ******************************************
  * Default GET route
