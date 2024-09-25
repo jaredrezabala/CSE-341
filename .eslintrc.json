@@ -1,0 +1,17 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "indent": ["error", "tab"],
+        "no-unused-vars":"error",
+        "no-undef": "error",
+        "no-multiple-empty-lines":"error",
+        "no-empty-function":"error"
+    }
+}
